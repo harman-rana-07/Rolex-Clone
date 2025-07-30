@@ -1,0 +1,1130 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    height: 15%;
+    width: 100%;
+    background-color: rgb(3, 74, 3);
+    display: flex;
+}
+
+#menu {
+    width: 30%;
+    height: 100%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#logo img:hover{
+    color: rgb(22, 158, 22);
+}
+#searchlogo{
+    position: relative;
+    left: -8px;
+    color: white;
+    }
+#searchlogo:hover{
+    color: green;
+}
+#search {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#locationlogo{
+    position: relative;
+    left: -8px;
+    color: white;
+    }
+#locationlogo:hover{
+    color: green;
+}    
+#location {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#favourite {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#favouritelogo{
+    position: relative;
+    left: -8px;
+    color: white;
+    }
+#favouritelogo:hover{
+    color: green;
+}  
+.heading p {
+    color: white;
+}
+
+.heading p:hover {
+    color: lightgreen;
+}
+
+.body {
+    height: 85%;
+    width: 100%;
+    background-color: rgb(171, 195, 233);
+    /* display: flex;*/
+}
+
+.body video {
+    width: 100%;
+    height: 100%;
+}
+
+.body p {
+    z-index: 1;
+    position: absolute;
+    left: 700px;
+    top: 90%;
+    color: white;
+    font-weight: bolder;
+}
+
+.body p:hover {
+    color: black;
+}
+
+.body2 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.second {
+    height: 85%;
+    width: 50%;
+}
+
+#one {
+    font-size: 25px;
+    color: green;
+}
+
+#one h1 {
+    margin: 60px;
+    margin-right: 90px;
+    margin-left: 75px;
+}
+
+#two p {
+    font-size: 25px;
+
+    margin: 60px;
+}
+
+#two h6 {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 60px;
+    color: green;
+}
+
+#two h6:hover {
+    color: black;
+}
+
+.header2 {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    top: 0px;
+    z-index: 1000;
+    background-color: white
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    font-weight: bold;
+
+}
+
+#all {
+    margin-left: 520px;
+    color: green;
+}
+
+.head p:hover {
+    color: green
+}
+
+.configure {
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 280px;
+}
+
+.image1 {
+    height: 600px;
+    width: 100%;
+
+}
+
+.image1 img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.land-dweller {
+    font-size: 45px;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    top: -35%;
+    left: -350px;
+}
+
+.land {
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    top: 0%;
+    left: -300px;
+}
+
+.image1:hover {
+    .land-dweller {
+        animation-name: land-dweller;
+        animation-duration: 1s;
+    }
+
+    .land {
+        animation-name: land;
+        animation-duration: 1s;
+    }
+}
+
+@keyframes land-dweller {
+    from {
+        top: 0%;
+        left: -100px;
+    }
+
+    to {
+        top: -35%;
+        left: 150px;
+    }
+}
+
+@keyframes land {
+    from {
+        top: 0%;
+        left: -100px;
+    }
+
+    to {
+        top: -30%;
+        left: 150px;
+    }
+}
+
+.image2 {
+    position: relative;
+    top: 280px;
+    height: 600px;
+    width: 100%;
+    color: white;
+}
+
+.image2 img {
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.main3 {
+    height: 6000px;
+}
+
+.day-date {
+    font-size: 45px;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    top: -35%;
+    left: -250px;
+}
+
+.day {
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    top: 0%;
+    left: -500px;
+    width: 450px;
+}
+
+.image2:hover {
+    .day-date {
+        animation-name: day-date;
+        animation-duration: 1s;
+    }
+
+    .day {
+        animation-name: day;
+        animation-duration: 1s;
+    }
+}
+
+@keyframes day-date {
+    from {
+        top: 0%;
+        left: -100px;
+    }
+
+    to {
+        top: -35%;
+        left: 150px;
+    }
+}
+
+@keyframes day {
+    from {
+        top: 0%;
+        left: -100px;
+    }
+
+    to {
+        top: -30%;
+        left: 150px;
+    }
+}
+
+.image3 {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    top: 88px;
+}
+
+.image3 img {
+    height: 100%;
+    width: 100%;
+}
+
+.sky-dweller {
+    font-size: 45px;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    top: -35%;
+    left: -250px;
+}
+
+.sky {
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    top: 0%;
+    left: -500px;
+
+}
+
+.image3:hover {
+    .sky-dweller {
+        animation-name: sky-dweller;
+        animation-duration: 2s;
+    }
+
+    .sky {
+        animation-name: sky;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes sky-dweller {
+    from {
+        top: 0%;
+        left: -100px;
+    }
+
+    to {
+        top: -35%;
+        left: 150px;
+    }
+}
+
+@keyframes sky {
+    from {
+        top: 0%;
+        left: -100px;
+    }
+
+    to {
+        top: -30%;
+        left: 150px;
+    }
+}
+
+.image4 {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    top: 89px;
+}
+
+.image4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.lady-date {
+    font-size: 45px;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    top: -35%;
+    left: -350px;
+    color: white;
+}
+
+.lady {
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    top: 0%;
+    left: -500px;
+    color: white;
+}
+
+.image4:hover {
+    .lady-date {
+        animation-name: lady-date;
+        animation-duration: 2s;
+
+    }
+
+    .lady {
+        animation-name: lady;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes lady-date {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -35%;
+        left: 150px;
+    }
+}
+
+@keyframes lady {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -30%;
+        left: 150px;
+    }
+}
+
+.image5 {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    top: 86px;
+}
+
+.image5 img {
+    height: 100%;
+    width: 100%;
+}
+
+.date-just {
+    font-size: 45px;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    top: -35%;
+    left: -350px;
+}
+
+.date {
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    top: 0%;
+    left: -500px;
+}
+
+.image5:hover {
+    .date-just {
+        animation-name: date-just;
+        animation-duration: 2s;
+    }
+
+    .date {
+        animation-name: date-just;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes date-just {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -35%;
+        left: 150px;
+    }
+}
+
+@keyframes date {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -30%;
+        left: 150px;
+    }
+}
+
+.image6 {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    top: 87px;
+    color: white;
+}
+
+.image6 img {
+    height: 100%;
+    width: 100%;
+}
+
+.oyster-perpetual {
+    font-size: 45px;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    top: -35%;
+    left: -350px;
+}
+
+.oyster {
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    top: 0%;
+    left: -500px;
+}
+
+.image6:hover {
+    .oyster-perpetual {
+        animation-name: oyster-perpetual;
+        animation-duration: 2s;
+    }
+
+    .oyster {
+        animation-name: oyster;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes oyster-perpetual {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -35%;
+        left: 150px;
+    }
+}
+
+@keyframes oyster {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -30%;
+        left: 150px;
+    }
+}
+
+.image7 {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    top: 87px;
+}
+
+.image7 img {
+    height: 100%;
+    width: 100%;
+}
+
+.submariner {
+    font-size: 45px;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    top: -35%;
+    left: -350px;
+}
+
+.sub {
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    top: 0%;
+    left: -500px;
+}
+
+.image7:hover {
+    .submariner {
+        animation-name: submariner;
+        animation-duration: 2s;
+    }
+
+    .sub {
+        animation-name: sub;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes submariner {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -35%;
+        left: 150px;
+    }
+}
+
+@keyframes sub {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -30%;
+        left: 150px;
+    }
+}
+
+.image8 {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    top: 87px;
+    color: white;
+}
+
+.image8 img {
+    height: 100%;
+    width: 100%;
+}
+
+.deepsea {
+    font-size: 45px;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    top: -35%;
+    left: -350px;
+
+}
+
+.deep {
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    top: 0%;
+    left: -500px;
+}
+
+.image8:hover {
+    .deepsea {
+        animation-name: deepsea;
+        animation-duration: 2s;
+    }
+
+    .deep {
+        animation-name: deep;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes deepsea {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -35%;
+        left: 150px;
+    }
+}
+
+@keyframes deep {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -30%;
+        left: 150px;
+    }
+}
+
+.image9 {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    top: 87px;
+    color: white;
+}
+
+.image9 img {
+    height: 100%;
+    width: 100%;
+}
+
+.explorer {
+    font-size: 45px;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    top: -35%;
+    left: -350px;
+
+}
+
+.ex {
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    top: 0%;
+    left: -500px;
+}
+
+.image9:hover {
+    .explorer {
+        animation-name: explorer;
+        animation-duration: 2s;
+    }
+
+    .ex {
+        animation-name: ex;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes explorer {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -35%;
+        left: 150px;
+    }
+}
+
+@keyframes ex {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -30%;
+        left: 150px;
+    }
+}
+
+.image10 {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    top: 87px;
+
+}
+
+.image10 img {
+    height: 100%;
+    width: 100%;
+}
+
+.nineteen {
+    font-size: 45px;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    top: -35%;
+    left: -350px;
+
+}
+
+.nine {
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    top: 0%;
+    left: -500px;
+}
+
+.image10:hover {
+    .nineteen {
+        animation-name: nineteen;
+        animation-duration: 2s;
+    }
+
+    .nine {
+        animation-name: nine;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes nineteen {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -35%;
+        left: 150px;
+    }
+}
+
+@keyframes nine {
+    from {
+        top: 0%;
+        left: -300px;
+    }
+
+    to {
+        top: -30%;
+        left: 150px;
+    }
+}
+
+.end {
+    height: 80px;
+    width: 100%;
+    position: relative;
+    top: 87px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.home {
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+.collection {
+    color: green;
+}
+
+.end2 {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top: 87px;
+    display: flex;
+    font-size: 20px;
+    background-color: antiquewhite;
+}
+
+#share {
+    margin-left: 100px;
+    margin-right: 15px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+.share {
+    margin-top: 35px;
+    margin-right: 15px;
+    color: green;
+}
+
+.end3 {
+    height: 1000px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.columns {
+    height: 100%;
+}
+
+#column1 {
+    width: 25%;
+}
+
+#column1 img {
+    height: 50px;
+    position: relative;
+    top: 170px;
+    left: 100px;
+}
+
+#column2 {
+    width: 20%;
+}
+
+.firsth2 {
+    position: relative;
+    top: 170px;
+    font-size: 25px;
+}
+
+.firstp {
+    position: relative;
+    top: 180px;
+    font-size: 20px;
+}
+
+.secondh2 {
+    position: relative;
+    top: 210px;
+    font-size: 25px;
+}
+
+.secondp {
+    position: relative;
+    top: 220px;
+    font-size: 20px;
+}
+
+.thirdh2 {
+    position: relative;
+    top: 240px;
+    font-size: 25px;
+}
+
+.thirdp {
+    position: relative;
+    top: 250px;
+    font-size: 20px;
+}
+
+#column3 {
+    width: 20%;
+}
+
+.mainh2 {
+    position: relative;
+    top: 170px;
+    font-size: 25px;
+}
+
+.h2of3 {
+    position: relative;
+    top: 200px;
+    font-size: 25px;
+}
+
+.firstpof3 {
+    position: relative;
+    top: 210px;
+    font-size: 20px;
+}
+
+.secondh2of3 {
+    position: relative;
+    top: 240px;
+    font-size: 25px;
+}
+
+.secondpof3 {
+    position: relative;
+    top: 250px;
+    font-size: 20px;
+}
+
+.thirdh2of3 {
+    position: relative;
+    top: 280px;
+    font-size: 25px;
+}
+
+.thirdpof3 {
+    position: relative;
+    top: 290px;
+    font-size: 20px;
+}
+
+.fourh2of3 {
+    position: relative;
+    top: 320px;
+    font-size: 25px;
+}
+
+.fourpof3 {
+    position: relative;
+    top: 330px;
+    font-size: 20px;
+}
+
+.fifthh2of3 {
+    position: relative;
+    top: 360px;
+    font-size: 25px;
+}
+
+.fifthpof3 {
+    position: relative;
+    top: 370px;
+    font-size: 20px;
+}
+
+.firsth2of4 {
+    position: relative;
+    top: 170px;
+    font-size: 25px;
+}
+
+.firstpof4 {
+    position: relative;
+    top: 180px;
+    font-size: 20px;
+}
+
+.secondh2of4 {
+    position: relative;
+    top: 210px;
+    font-size: 20px;
+}
+
+.secondpof4 {
+    position: relative;
+    top: 220px;
+    font-size: 20px;
+}
+
+.thirdh2of4 {
+    position: relative;
+    top: 250px;
+    font-size: 20px;
+}
+
+.thirdpof4 {
+    position: relative;
+    top: 260px;
+    font-size: 20px;
+}
+
+.fourthh2of4 {
+    position: relative;
+    top: 290px;
+    font-size: 20px;
+}
+
+.fourthpof4 {
+    position: relative;
+    top: 300px;
+    font-size: 20px;
+}
+
+.fifthh2of4 {
+    position: relative;
+    top: 330px;
+    font-size: 20px;
+}
+
+.fifthpof4 {
+    position: relative;
+    top: 340px;
+    font-size: 20px;
+    left: 10px;
+}
+
+.columns h2:hover {
+    color: green;
+}
+
+.columns h4:hover {
+    color: green;
+}
+
+.columns p:hover {
+    color: green;
+}
