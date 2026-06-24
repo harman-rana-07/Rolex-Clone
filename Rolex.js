@@ -1,19 +1,84 @@
-function updateAnalogClock() { 
-    const now = new Date();
-     const hours = now.getHours();
-      const minutes = now.getMinutes(); const seconds = now.getSeconds();
-        const secondsDegrees = seconds * 6; 
-         const minutesDegrees = (minutes * 6) + (seconds * 0.1); 
-          const hour12 = hours % 12 || 12; const hoursDegrees = (hour12 * 30) + (minutes * 0.5); 
-           const hourHand = document.getElementById('hour-hand'); 
-           const minuteHand=document.getElementById('minute-hand');
-           const secondHand=document.getElementById('second-hand');
 
-           hourHand.style.transform=`translate(-50%) rotate(${hoursDegrees}deg)`;
-           minuteHand.style.transform=`translate(-50%) rotate(${minutesDegrees}deg)`;
-           secondHand.style.transform=`translate(-50%) rotate(${secondsDegrees}deg)`;
+
+
+const watches = [
+    { name: "Land-Dweller", linkId: "link1" },
+    { name: "Day-Date", linkId: "link2" },
+    { name: "Sky-Dweller", linkId: "link3" },
+    { name: "Lady-Datejust", linkId: "link4" },
+    { name: "Datejust", linkId: "link5" },
+    { name: "Oyster Perpetual", linkId: "link6" },
+    { name: "Submariner", linkId: "link7" },
+    { name: "Deepsea", linkId: "link8" },
+    { name: "Explorer", linkId: "link9" },
+    { name: "1908", linkId: "link10" }
+];
+
+const searchBtn = document.getElementById("search");
+const searchModal = document.getElementById("search-modal");
+const searchInput = document.getElementById("search-input");
+const searchResults = document.getElementById("search-results");
+const closeSearch = document.getElementById("close-search");
+
+searchBtn.addEventListener("click", () => {
+    searchModal.style.display = "flex";
+    searchInput.value = "";
+    searchResults.innerHTML = "";
+    searchInput.focus();
+});
+
+closeSearch.addEventListener("click", () => {
+    searchModal.style.display = "none";
+});
+
+searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase();
+    searchResults.innerHTML = "";
+
+    if (query === "") return;
+
+    watches.forEach(watch => {
+        if (watch.name.toLowerCase().includes(query)) {
+            const li = document.createElement("li");
+            li.textContent = watch.name;
+
+            li.addEventListener("click", () => {
+                const link = document.querySelector(`#${watch.linkId} a`);
+                window.open(link.href, "_blank");
+            });
+
+            searchResults.appendChild(li);
+        }
+    });
+});
+
+const favouriteBtn = document.getElementById('favourite');
+favouriteBtn.addEventListener('click', function() {
+    window.location.href = 'favourite.html'; 
+});
+
+    function addToFavourites(name, img, desc) {
+    let favs = JSON.parse(localStorage.getItem('rolexFavs')) || [];
+    const isDuplicate = favs.some(item => item.name === name);
+
+    if (!isDuplicate) {
+        favs.push({ name, img, desc });
+        localStorage.setItem('rolexFavs', JSON.stringify(favs));
+        alert('Added to favourites');
+    } else {
+        alert('Already in favourites');
+    }
 }
 
-updateAnalogClock();
+const filterButtons = document.querySelectorAll('.head');
 
-setInterval(updateAnalogClock,1000);
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        
+        filterButtons.forEach(btn => btn.classList.remove('active-link'));
+        button.classList.add('active-link');
+
+        
+    });
+});
+
