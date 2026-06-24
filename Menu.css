@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #006039; /* Fallback color */
+}
+
+/* Background Gradient */
+.menu-container {
+    min-height: 100vh;
+    width: 100%;
+    /* Dark green radial/linear gradient mix */
+    background: linear-gradient(135deg, #004d2c 0%, #006039 50%, #1a7a51 100%);
+    color: white;
+    padding: 20px 30px;
+}
+
+/* Header Section */
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.close-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 40px; /* Adjust based on logo scale */
+}
+
+.language-selector {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Navigation List */
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav li {
+    padding: 12px 0;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.main-nav li:hover {
+    opacity: 0.7;
+}
+
+/* Bold Categories */
+.bold-item {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Arrow styling */
+.arrow {
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+/* Spacing between groups */
+.spacer {
+    height: 25px;
+}
+
+/* Secondary/Light Items at the bottom */
+.light-item {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 0 !important;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 480px) {
+    .bold-item {
+        font-size: 22px;
+    }
+    .menu-container {
+        padding: 15px 20px;
+    }
+}
