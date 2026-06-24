@@ -1,0 +1,111 @@
+body {
+    background-color: #fcfcfc;
+    color: #1a1a1a;
+}
+
+.fav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.fav-hero {
+    text-align: center;
+}
+
+.fav-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+.fav-hero p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.find-link {
+    color: #006039;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.clear-btn {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.clear-btn:hover {
+    background-color: #eee;
+}
+
+.suggestions-section {
+    margin-top: 80px;
+}
+
+.watch-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background-color: #e5e5e5; /* Creates thin border lines between cards */
+    margin-top: 50px;
+}
+
+.watch-card {
+    background: #fff;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.watch-card img {
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+
+.remove-icon {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 28px;
+    color: #006039;
+    cursor: pointer;
+}
+
+
+.remove-icon:hover {
+    color: #cc0000;
+}
+
+.card-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.card-info p {
+    color: #666;
+    font-size: 16px;
+}
+
+.footer-breadcrumb {
+    padding: 40px 10%;
+    border-top: 1px solid #eee;
+    margin-top: 100px;
+}
