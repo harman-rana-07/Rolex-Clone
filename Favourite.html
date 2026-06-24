@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Favourites - Rolex</title>
+    <link rel="stylesheet" href="rolex.css">
+    <link rel="stylesheet" href="favourite.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="heading" id="menu"><p>Menu</p></div>
+        <div class="heading" id="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCEB3Na2E1ZI3DMNdRPoI4bJ2yRPxZPzwfww&s" alt="Logo">
+        </div>
+        <div class="heading" id="search"><i class="ri-search-line"></i><p>Search</p></div>
+        <div class="heading" id="location"><i class="ri-map-pin-2-fill"></i><p>Store Locator</p></div>
+        <div class="heading" id="favourite"><i class="ri-heart-line"></i><p>Favourite</p></div>
+    </div>
+    <div class="header-spacer"></div>
+
+    <div class="fav-container">
+        <div class="fav-hero">
+            <span>YOUR</span>
+            <h1>Favourites</h1>
+            <p>Browse the online catalogue of watches and accessories, and add your favourites to your wishlist here.</p>
+            <div class="btn-group">
+                <a href="index.html" class="find-link">Find your Rolex <i class="ri-arrow-right-s-line"></i></a>
+                <button id="clear-all" class="clear-btn">Clear All</button>
+            </div>
+        </div>
+
+        <div class="suggestions-section">
+            <h2>Saved Watches</h2>
+            <div class="watch-grid" id="favorites-grid"></div>
+        </div>
+    </div>
+
+    <div class="footer-breadcrumb">
+        <p>Home / <span>Favourites</span></p>
+    </div>
+
+    <script src="favourite.js"></script>
+</body>
+</html>
+
+
